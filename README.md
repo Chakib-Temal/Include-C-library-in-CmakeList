@@ -11,7 +11,7 @@ well there is surely a way to add the library on the GCC standard library, but h
 
 open a new project and this is what you need to put in your cmakelist.txt file
 
-**
+`
 cmake_minimum_required(VERSION 3.15)
 project(libusb)
 
@@ -25,7 +25,7 @@ file(GLOB LIBRARIES "/usr/local/Cellar/libusb/1.0.23/lib/*.dylib")
 message("LIBRARIES = ${LIBRARIES}")
 
 TARGET_LINK_LIBRARIES(libusb ${LIBRARIES})
-**
+`
 
 restart your compilation and it should work
 
