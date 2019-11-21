@@ -5,6 +5,8 @@ this is a sample solution for  Unix (Linux, OS X) users , for those who have ins
 
 if you follow the logs of hombrew (or any other package manager), you will find the path that homebrew has chosen for the installation of the library on your Os
 
+`locate libusb | grep .so ` (linux)
+
 for my part, he added the library in "/ usr / local / Cellar / libusb",
 
 well there is surely a way to add the library on the GCC standard library, but here I will show you an example of a cmakeList.txt file that you can use for your project to includ it on the project at least 
